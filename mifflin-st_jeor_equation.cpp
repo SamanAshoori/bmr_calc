@@ -4,12 +4,12 @@ int main()
 {
     //Variable declaration
     std::string name;
-    std::string sex;
+    char sex;
     int age;
     int height;
     int weight;
     int activity_factor;
-    int bmr;
+    double bmr;
 
     std::cout << "What's your name?: ";
     std::cin >> name;
@@ -28,7 +28,7 @@ int main()
     std::cout << "On a scale from 1-5 how active are you: ";
     std::cin >> activity_factor;
 
-    if (sex = 'm' || sex = 'M')
+    if (tolower(sex) == 'm')
     {
         bmr = (10 * weight) + (6.25*height) - (5*age) + 5;
     }
