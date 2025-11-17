@@ -30,9 +30,11 @@ int main()
 
     if (tolower(sex) == 'm')
     {
+        std::cout << sex << '\n';
         bmr = (10 * weight) + (6.25*height) - (5*age) + 5;
     }
     else{
+        std::cout << sex << '\n';
         bmr = (10 * weight) + (6.25*height) - (5*age) - 161;
     }
 
